@@ -8,5 +8,7 @@ if (form) {
     controller.adiciona();
   });
 } else {
-  throw Error("Não foi possivel inicializar a aplicação");
+  throw Error(
+    "Não foi possível inicializar a aplicação. Verifique se o form existe."
+  );
 }
