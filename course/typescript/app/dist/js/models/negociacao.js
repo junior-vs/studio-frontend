@@ -4,6 +4,11 @@ export class Negociacao {
         this.quantidade = quantidade;
         this.valor = valor;
     }
+    ehIgual(negociacao) {
+        return (this.data.getDate() === negociacao.data.getDate() &&
+            this.data.getMonth() === negociacao.data.getMonth() &&
+            this.data.getFullYear() === negociacao.data.getFullYear());
+    }
     get volume() {
         return this.quantidade * this.valor;
     }
@@ -17,5 +22,8 @@ export class Negociacao {
         const quantidade = parseInt(quantidadeInput);
         const valor = parseFloat(valorInput);
         return new this(date, quantidade, valor);
+    }
+    toString() {
+        return JSON.stringify(this);
     }
 }
