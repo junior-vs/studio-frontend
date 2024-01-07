@@ -9,7 +9,13 @@ import { CadastroComponent } from './components/cadastro/cadastro.component';
 import { SucessoCadastroComponent } from './components/sucesso-cadastro/sucesso-cadastro.component';
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, FooterComponent, CadastroComponent, SucessoCadastroComponent],
+  declarations: [
+    AppComponent,
+    HeaderComponent,
+    FooterComponent,
+    CadastroComponent,
+    SucessoCadastroComponent,
+  ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],
