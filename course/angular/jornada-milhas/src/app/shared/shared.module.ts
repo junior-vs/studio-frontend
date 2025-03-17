@@ -1,16 +1,12 @@
-import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
-import { MatToolbarModule } from '@angular/material/toolbar';
+import { CommonModule } from '@angular/common';
 
 
 
 @NgModule({
-  declarations: [
-
-  ],
+  declarations: [],
   imports: [
-    CommonModule,
-    MatToolbarModule
+    CommonModule
   ]
 })
 export class SharedModule { }

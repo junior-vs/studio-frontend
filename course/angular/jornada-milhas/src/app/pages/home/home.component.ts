@@ -1,16 +1,16 @@
 import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
 import { BannerComponent } from "../../shared/banner/banner.component";
-import { CardBuscaComponent } from "../../shared/card-busca/card-busca.component";
 import { ContainerComponent } from "../../shared/container/container.component";
-import { CardDepoimentoComponent } from "../../shared/card-depoimento/card-depoimento.component";
+import { CardBuscaComponent } from "../../shared/card-busca/card-busca.component";
+import { CardDepoimentosComponent } from "../../shared/card-depoimentos/card-depoimentos.component";
+import { FormBuscaComponent } from "../../shared/form-busca/form-busca.component";
+import { FooterComponent } from "../../shared/footer/footer.component";
 
 @Component({
   selector: 'app-home',
-  standalone: true,
-  imports: [CommonModule, BannerComponent, CardBuscaComponent, ContainerComponent, CardDepoimentoComponent],
+  imports: [BannerComponent, ContainerComponent, CardBuscaComponent, CardDepoimentosComponent, FormBuscaComponent],
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss']
+  styleUrl: './home.component.scss'
 })
 export class HomeComponent {
 

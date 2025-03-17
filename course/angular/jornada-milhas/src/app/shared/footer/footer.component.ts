@@ -3,10 +3,9 @@ import { ContainerComponent } from "../container/container.component";
 
 @Component({
   selector: 'app-footer',
+  imports: [ContainerComponent],
   templateUrl: './footer.component.html',
-  styleUrls: ['./footer.component.scss'],
-  standalone: true,
-  imports: [ContainerComponent]
+  styleUrl: './footer.component.scss'
 })
 export class FooterComponent {
 
