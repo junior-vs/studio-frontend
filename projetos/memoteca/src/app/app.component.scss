@@ -1,0 +1,25 @@
+main {
+  background: url(/assets/imagens/background-completo.png);
+  background-size: cover;
+
+}
+
+
+app-cabecalho {
+  grid-row: 1; // Aumenta o tamanho vertical
+}
+
+mat-sidenav-container {
+  grid-row: 2;
+  height: 100%;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: 64px 1fr;
+  height: 100vh;
+}
+
+.content {
+  padding: 20px;
+}
