@@ -11,9 +11,10 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
 import { ListarPensamentoComponent } from './componentes/pensamentos/listar-pensamento/listar-pensamento.component';
+import { PensamentoComponent } from './componentes/pensamentos/pensamento/pensamento.component';
 
 @NgModule({
-  declarations: [AppComponent, ListarPensamentoComponent],
+  declarations: [AppComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -24,7 +25,8 @@ import { ListarPensamentoComponent } from './componentes/pensamentos/listar-pens
     MatToolbarModule,
     MatSidenavModule,
     MatListModule,
-  ],
+    PensamentoComponent
+],
   providers: [],
   bootstrap: [AppComponent],
 })

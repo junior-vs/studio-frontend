@@ -6,8 +6,9 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './rodape.component.html',
-  styleUrls: ['./rodape.component.scss']
+  styleUrls: ['./rodape.component.scss'],
 })
 export class RodapeComponent {
-
+  imagem = 'assets/imagens/logo-alura.png';
+  alttext='Logo Alura';
 }
