@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { Promocao } from 'src/app/core/types/type';
+import { Promocao } from 'src/app/core/models/promocao.model';
 
 @Component({
   selector: 'app-card-busca',

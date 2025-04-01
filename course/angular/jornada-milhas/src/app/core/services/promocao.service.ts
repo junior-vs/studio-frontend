@@ -1,8 +1,9 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { Promocao } from '../types/type';
+
 import { environment } from 'src/environments/environment';
+import { Promocao } from '../models/promocao.model';
 
 @Injectable({
   providedIn: 'root'
