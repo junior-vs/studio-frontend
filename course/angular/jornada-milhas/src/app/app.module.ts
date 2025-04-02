@@ -32,6 +32,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { DropdownUfComponent } from './shared/form-busca/dropdown-uf/dropdown-uf.component';
 // código omitido
 import { MatAutocompleteModule } from '@angular/material/autocomplete';
+import { SeletorPassageiroComponent } from './shared/seletor-passageiro/seletor-passageiro.component';
 
 
 @NgModule({
@@ -50,6 +51,7 @@ import { MatAutocompleteModule } from '@angular/material/autocomplete';
     BotaoControleComponent,
     PromocoesComponent,
     DropdownUfComponent,
+    SeletorPassageiroComponent,
   ],
   imports: [
     BrowserModule,

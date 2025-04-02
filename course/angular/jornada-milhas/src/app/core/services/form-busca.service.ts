@@ -16,7 +16,39 @@ export class FormBuscaService {
       origem: new FormControl(null),
       destino: new FormControl(null),
       tipo: new FormControl('Econômica'),
+      adultos: new FormControl(1),
+      criancas: new FormControl(0),
+      bebes: new FormControl(0),
     });
+  }
+
+  /**
+   * Constructs a descriptive string summarizing the number of passengers
+   * (adults, children, and infants) based on the values retrieved from the form.
+   *
+   * @returns {string} A formatted string describing the passengers, including:
+   * - The number of adults (e.g., "1 adulto" or "2 adultos").
+   * - The number of children (e.g., "1 criança" or "2 crianças"), if any.
+   * - The number of infants (e.g., "1 bebê" or "2 bebês"), if any.
+   * The descriptions are separated by commas if multiple categories are present.
+   * If no passengers are specified, an empty string is returned.
+   */
+  getDescricaoPassageiros(): string {
+    let descricao = '';
+
+    const adultos = this.formBusca.get('adultos')?.value;
+    const passageiros = [
+      { tipo: 'adulto', quantidade: this.formBusca.get('adultos')?.value },
+      { tipo: 'criança', quantidade: this.formBusca.get('criancas')?.value },
+      { tipo: 'bebê', quantidade: this.formBusca.get('bebes')?.value },
+    ];
+
+    descricao = passageiros
+      .filter(p => p.quantidade && p.quantidade > 0)
+      .map(p => `${p.quantidade} ${p.tipo}${p.quantidade > 1 ? 's' : ''}`)
+      .join(', ');
+
+    return descricao;
   }
 
   obterControle(nome: string): FormControl {
