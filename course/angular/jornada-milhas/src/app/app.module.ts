@@ -33,6 +33,7 @@ import { DropdownUfComponent } from './shared/form-busca/dropdown-uf/dropdown-uf
 // código omitido
 import { MatAutocompleteModule } from '@angular/material/autocomplete';
 import { SeletorPassageiroComponent } from './shared/seletor-passageiro/seletor-passageiro.component';
+import { LoginComponent } from './pages/login/login.component';
 
 
 @NgModule({
@@ -52,6 +53,7 @@ import { SeletorPassageiroComponent } from './shared/seletor-passageiro/seletor-
     PromocoesComponent,
     DropdownUfComponent,
     SeletorPassageiroComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,5 +1,5 @@
 
-
+# Curso 1
 
 ## 1.1. Para saber mais: explorando o projeto no Figma
 
@@ -97,6 +97,8 @@ O width é apenas uma das propriedades disponíveis. Recomendamos a consulta da 
 
 Em resumo, o componente Dialog do Angular Material permite a criação de modais flexíveis e interativos na aplicação, e as diversas propriedades disponíveis oferecem controle e personalização sobre o comportamento e a aparência desses modais.
 
+# Curso 2
+
 ## 2.1 Para saber mais: trabalhando com Serviços Singleton
 
 No Angular, os serviços são classes que têm a responsabilidade de fornecer funcionalidades específicas e compartilhadas em toda a aplicação. Ele é fundamental para separação de preocupações isolando a lógica de negócios e manipulação de dados do restante do código.
@@ -144,3 +146,7 @@ A interface ControlValueAccessor possui quatro métodos principais que devem ser
 4. `setDisabledState(isDisabled: boolean)`: Este método é usado para definir o estado de desabilitado do componente personalizado com base no valor fornecido pelo formulário. O componente deve atualizar sua visualização e comportamento de acordo com o estado de desabilitado.
 
 Ao implementar a interface ControlValueAccessor, um componente personalizado se torna compatível com o sistema de formulários do Angular e pode ser usado de forma transparente, assim o componente pode receber valores do formulário, notificar o formulário sobre as alterações em seu valor interno e reagir a eventos como toque e alteração de foco.
+
+# Curso 3
+
+[Repositorio](https://github.com/alura-cursos/3213-jornada-milhas)
